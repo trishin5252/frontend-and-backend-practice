@@ -186,3 +186,67 @@ body {
     padding: 30px; /* Внутренние отступы */
     margin-top: 50px; /* Отступ сверху */
 }
+/* ===== СТИЛИ ДЛЯ СТРАНИЦЫ ТОВАРОВ ===== */
+.product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border-left: 4px solid #667eea;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* ===== СТИЛИ ДЛЯ СТРАНИЦЫ НОВОСТЕЙ ===== */
+.news-item {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border-left: 4px solid #667eea;
+}
+
+/* ===== СТИЛИ ДЛЯ СТРАНИЦЫ КОНТАКТОВ ===== */
+.contact-info {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.contact-info button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-info button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* ===== СТИЛИ ДЛЯ СТРАНИЦЫ ПРАКТИК ===== */
+.practice-item {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-left: 4px solid #4facfe;
+}
