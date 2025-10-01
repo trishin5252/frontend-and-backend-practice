@@ -250,3 +250,200 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     border-left: 4px solid #4facfe;
 }
+/* ===== ОБЩИЕ СТИЛИ ДЛЯ ВСЕХ СТРАНИЦ ===== */
+.content h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+/* ===== СТРАНИЦА ТОВАРОВ (goods.html) ===== */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    border-color: #667eea;
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    color: #2c3e50;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.product-card p {
+    color: #7f8c8d;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* ===== СТРАНИЦА НОВОСТЕЙ (news.html) ===== */
+.news-list {
+    margin-top: 30px;
+}
+
+.news-item {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 25px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-left: 5px solid #667eea;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateX(8px);
+}
+
+.news-item h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.news-meta {
+    color: #95a5a6;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.news-item p {
+    color: #5d6d7e;
+    line-height: 1.7;
+}
+
+/* ===== СТРАНИЦА КОНТАКТОВ (contacts.html) ===== */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 35px;
+    border-radius: 15px;
+    margin: 25px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.contact-field {
+    margin: 20px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.contact-field strong {
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.contact-field p {
+    color: #5d6d7e;
+    margin: 0;
+    font-size: 16px;
+}
+
+.contact-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* ===== СТРАНИЦА ПРАКТИК (practices.html) ===== */
+.practices-list {
+    margin-top: 30px;
+}
+
+.practice-item {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-left: 5px solid #4facfe;
+    transition: all 0.3s ease;
+}
+
+.practice-item:hover {
+    transform: translateX(5px);
+    border-left-color: #667eea;
+}
+
+.practice-item h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.practice-item p {
+    color: #5d6d7e;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+}
